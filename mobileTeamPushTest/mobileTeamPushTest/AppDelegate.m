@@ -95,7 +95,7 @@
 // app being launched - sdk handles via UIApplicationDidFinishLaunchingNotification handler
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     // only send the hit if the app is not active
-    if (application.applicationState != UIApplicationStateActive) {
+    if (application.applicationState == UIApplicationStateInactive) {
         [ADBMobile trackPushMessageClickThrough:userInfo];
     }
 }
@@ -118,7 +118,7 @@
     [ADBMobile trackAction:@"didReceiveRemoteNotification" data:@{@"appState":appStateString}];
     
     // only send the hit if the app is not active
-    if (application.applicationState != UIApplicationStateActive) {
+    if (application.applicationState == UIApplicationStateInactive) {
         NSLog(@"calling trackPushMessageClickThrough");
         [ADBMobile trackAction:@"push from didReceive" data:nil];
         [ADBMobile trackPushMessageClickThrough:userInfo];

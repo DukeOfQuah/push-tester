@@ -61,6 +61,8 @@
 		F042423D20A2035000D60235 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F10D6B571D71EBD3003DDCD0 /* AdobeMobileLibrary */,
+				F1E7953F1B8A6D3A009D40C1 /* SystemConfiguration.framework */,
 				F042423E20A2035000D60235 /* libsqlite3.0.tbd */,
 			);
 			name = Frameworks;
@@ -73,15 +75,12 @@
 				F10D6B591D71EBD3003DDCD0 /* ADBMobileConfig.json */,
 				F10D6B5A1D71EBD3003DDCD0 /* AdobeMobileLibrary.a */,
 			);
-			name = AdobeMobileLibrary;
-			path = "Mobile Team Push Tester_iOS-4.12.0/AdobeMobileLibrary";
+			path = AdobeMobileLibrary;
 			sourceTree = "<group>";
 		};
 		F1E7950B1B8A66B8009D40C1 = {
 			isa = PBXGroup;
 			children = (
-				F10D6B571D71EBD3003DDCD0 /* AdobeMobileLibrary */,
-				F1E7953F1B8A6D3A009D40C1 /* SystemConfiguration.framework */,
 				F1E795161B8A66B8009D40C1 /* mobileTeamPushTest */,
 				F1E795151B8A66B8009D40C1 /* Products */,
 				F042423D20A2035000D60235 /* Frameworks */,
@@ -99,7 +98,6 @@
 		F1E795161B8A66B8009D40C1 /* mobileTeamPushTest */ = {
 			isa = PBXGroup;
 			children = (
-				F1CAA1BB1E00E94900D61B44 /* mobileTeamPushTest.entitlements */,
 				F1B824911C4C85E6005D72DD /* awesome-animal-crossovers-9.jpg */,
 				F1E7954B1B8C0323009D40C1 /* nick_cat.jpg */,
 				F1E396B51BAB555500571710 /* bird_dog.jpg */,
@@ -118,6 +116,7 @@
 		F1E795171B8A66B8009D40C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F1CAA1BB1E00E94900D61B44 /* mobileTeamPushTest.entitlements */,
 				F1E795181B8A66B8009D40C1 /* Info.plist */,
 				F1E795191B8A66B8009D40C1 /* main.m */,
 			);
@@ -348,10 +347,7 @@
 				INFOPLIST_FILE = mobileTeamPushTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(PROJECT_DIR)/Mobile Team Push Tester_iOS-4.12.0/AdobeMobileLibrary\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.steveb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -367,10 +363,7 @@
 				INFOPLIST_FILE = mobileTeamPushTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(PROJECT_DIR)/Mobile Team Push Tester_iOS-4.12.0/AdobeMobileLibrary\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.steveb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
